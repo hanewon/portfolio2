@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+*{
+       outline: 1px solid red;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* background-color: #F4F4F4; */
+}
+
+/*메뉴 영역*/
+.nav{
+    padding: 20px 50px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    /* height: 83px; */
+    /* align-items: center; */
+    z-index: 100;
+}
+/*메뉴 목록*/
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1em;
+}
+/*메뉴 아이템*/
+.menu li{
+    text-align: center; font-size: 20px;
+}
+/*홈 메뉴 분할*/
+.menu li:nth-child(1){
+    margin-right: auto;
+}
+/*오른쪽 메뉴 분할*/
+.menu li:nth-child(6){
+    margin-right: auto;
+}/*오른쪽 메뉴 분할*/
+.menu li:nth-child(6){
+    margin-right: auto;
+}
+/*오른쪽 메뉴 장식*/
+.menu li:nth-last-child(-n+2){
+    /* border-radius: 15px; */
+    /* background-color: rgb(219, 232, 238); */
+}
+/*하이퍼링크 처리*/
+/* .menu li a{
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none;
+    letter-spacing: -1px;
+    color: #000;
+} */
+/*오른쪽 메뉴 마우스 호버*/
+.menu li:nth-last-child(-n+2):hover{
+    /* background-color: rgb(137, 197, 224); */
+}
+.menu li:nth-last-child(-n+2):hover a{
+    color: #fff;
+}
+/*왼쪽 메뉴 마우스 호버*/
+.menu li:nth-child(-n+6):hover{
+    border-bottom: 2px solid rgb(94, 163, 196);
+}
+/* .menu {height: 130px; background-color: ;} */
+.home0 {
+    width: 100%;
+    background: url(/project/img/어울링/메인화면\ 어울링.png) no-repeat top / auto;
+    /* background-color: #99a2ad;  */
+    height: 1080px;
+}
+.home0{background-color: #99a2ad; }
+
+.home {
+    padding: 130px 130px 130px 130px;
+    height: 1080px;
+    /* gap: 15px; */
+
+}
+.home > h2 {font-size: 60px; color: #fff;}
+.search{
+    width: 995px;
+    /* height: 60px; */
+    border: solid 3px #1782FF;
+    align-items: center;
+    border-radius: 15px;
+    background: #fff;
+    padding: 10px;
+    font-size: 35px;
+    
+}
+/* .search > p {font-size: 22px;} */
+.but {
+    display: flex;
+    /* width: 300px; */
+    /* height: 40px; */
+    /* gap: 10px; */
+    padding: 20px 0 0 0;
+}
+.but > button {
+    width: 227px;
+    height: 70px;
+    font-size: 22px;
+    border-radius: 15px;
+    border: solid 3px #1782FF;
+}
+
+.view2{
+    /* padding: 130px 170px 130px 130px; */
+    height: 1205px;
+    background: #edf9fd;
+    background: url(/project/img/어울링/2번째화면.png) no-repeat bottom;
+}
+.lr{display: flex; }
+.lr > div {width: 600px;}
+.left > p {font-size: 20px;}
+
+.menus {
+    position: relative;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menus label i {
+    font-style: normal;
+    color: #aaa;
+    position: absolute;
+    margin-left: 0.5em;
+}
+
+.v2R {
+    float: left;
+    position: relative;
+}
+.v2R > label {
+    background-color: #f0f0f0;
+    padding: 0.5em 3.5em 0.5em 2em;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+.v2R [type="radio"], .v2R [type="checkbox"] {
+    display: none;
+}
+.v2R .content {
+    position: absolute;
+    top: 100%; 
+    /* 부모 바로 밑에 붙을 수 있어서 top 0을 일부러 안씀 */
+    display: none;
+    left: 0;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+.v2R .content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.v2R .content a, .v2R .content input ~ label {
+    display: block;
+    color: white;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.v2R .content input ~ label{
+    padding-right: 24px;
+}
+.v2R .content ul li:nth-child(n + 2){
+    border-top: 1px solid #999;
+}
+.menus [type="radio"]:checked ~ label {
+    z-index: 2;
+}
+.menus [type="radio"]:checked ~ label ~ .content {
+    z-index: 1;
+    display: block;
+}
+.v2R .content [type="checkbox"]:checked ~ label ~ .submenu {
+    z-index: 1;
+    display: block;
+}
+
+.close-menu {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.close-menu label {
+    background: #333;
+    color: white;
+}
+.menus [type="radio"]:checked ~ label ~ .close-menu {
+    z-index: 3;
+}
+
+
+
+
+.new{
+    width: 293px; 
+    height: 40px; 
+    border-radius: 30px;
+    background: #fff;
+    font-size: 19px;
+    font-weight: bold;
+}
+.view2 > h5 {font-size: 22px; color: #1782FF;}
+h3{font-size: 40px;}
+.right > button {
+    font-size: 17px;
+    text-align: left;
+    width: 513px; 
+    height: 70px;
+    border-radius: 15px;
+    gap: 30px;
+}
+
+/* .lr div{text-align: center;} */
+/*왼쪽 분할*/
+.lr div:nth-child(1){
+    margin-right: auto;
+}
+.lr div:nth-child(2){
+    margin-left: auto;
+}
+
+.view3{
+    text-align: center;
+    height: 1680px;
+    background-color: #F4F4F4;
+    padding: 130px;
+}
+.pay {
+    display: flex;
+    width: 1183px;
+    align-items: center;
+    text-align: left;
+    gap: 50px;
+    border-radius: 15px;
+    border: solid 1px #C5C5C5;
+    background: #fff;
+    transform: translate(180px, -220px);
+    padding: 30px;
+}
+/* .pay div:nth-child(1){margin-right: auto;} */
+/* .pay div:nth-child(2){margin-left: auto;} */
+.payL{width: 485px; display: flex;}
+.payt > h5 {font-size: 22px;}
+.payt > p {font-size: 17px;}
+.payR{width: 485px; display: flex;}
+.payt > button {
+    width: 120px;
+    height: 30px;
+    background: #fff;
+    border: solid 1px #BBBBBB;
+    font-size: 14px;
+    border-radius: 30px;
+}
+.payt > img {height: 90px;}
+
+.view3 > p {font-size: 22px;}
+.view3but{gap: 20px;}
+.view3but > button {
+    width: 170px; height: 50px; border-radius: 50px; 
+    border: solid 1px #8A8A8A;
+    font-size: 20px;
+}
+.step {display: flex;}
+
+.view4{
+    text-align: center;
+    height: 1240px;
+    padding: 130px;
+}
+.view5{
+    text-align: center;
+    height: 730px;
+    padding: 130px;
+    background: url(/project/img/어울링/명소.png) no-repeat bottom;
+}
+footer{
+    height: 220px;
+    background: #CBE3FF;
+}
