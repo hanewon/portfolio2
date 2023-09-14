@@ -1,0 +1,341 @@
+@charset "utf-8";
+* {
+    /* outline: 1px solid red; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li {
+    list-style: none;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /* background: #55D195; */
+    /* border: 0.5px solid #ee2525; */
+}
+.Hnav {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    /* background-color: #55D195; */
+    /* border-radius: 0 0 20px 20px; */
+}
+.Hmenu {
+    display: flex;
+    list-style: none;
+    /* margin: 0;
+    padding: 0; */
+    gap: 1em;
+    margin: 1px 0 1px 0;
+    /* padding: 0.5em 0em 0.5em 0.5em; */
+}
+.Hmenu .Htext {
+    color: #ffffff;
+    font-size: 17px;
+}
+.Hmenu .icon {
+    color: #ffffff;
+}
+.Hnav .Hmenu {
+    font-size: 28px;
+    font-weight: bold;
+}
+/*헤더메뉴 아이템*/
+/* .main{padding: 0; margin: 0;} */
+.Mnav {
+    background-color: #6FF38C;
+    padding: 3px;
+}
+.Hmenu li {
+    text-align: center;
+}
+/*메뉴 분할*/
+.Hmenu li:nth-child(1) {
+    margin-right: auto;
+}
+/* 로고 */
+.Hmenu li:nth-child(2) {
+    margin: auto;
+}
+/*돋보기 분할*/
+.Hmenu li:nth-child(3) {
+    margin-left: auto;
+}
+
+
+/* 메인 */
+main {
+    background: rgb(238, 251, 255);
+    background: linear-gradient(180deg, rgba(238, 251, 255, 1) 2%, rgba(169, 210, 222, 1) 81%);
+
+}
+.mypage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 25px 0px;
+    height: 480px;
+    position: relative;
+    background: url(/project/img/gg/B능그미_5.png) no-repeat right bottom / auto;
+}
+
+
+.button1 {
+    width: 87px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: #28BB74;
+    color: #fff;
+    border: solid 1px #28BB74;
+    align-self: flex-end;
+}
+.circle {
+    border-radius: 50%;
+    background-color: #dbf5e5;
+    flex: 0 0 170px;
+    width: 170px;
+    height: 170px;
+    box-shadow: 0 4px 3px 0 rgba(255, 255, 255, 0.842), 0 6px 10px 0 rgba(255, 255, 255, 0.192);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    background: rgb(255, 199, 0);
+    background: linear-gradient(180deg, rgba(255, 199, 0, 1) 8%, rgba(255, 199, 0, 1) 30%, rgba(255, 255, 255, 1) 95%);
+}
+.circle > p {
+    color: #fff;
+}
+.number {
+    font-size: 60px;
+}
+.per {
+    font-size: 40px;
+}
+
+.CCart {
+    margin: auto 0px 20px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.mypage > h3 {
+    text-align: left;
+    font-size: 20px;
+}
+.cart {
+    display: flex;
+    height: 90px;
+    border: solid 2px #fff;
+    background-color: rgba(255,255,255,0.5);
+    text-align: center;
+    border-radius: 12px;
+}
+.cart > div {
+    text-align: center;
+    flex: 1 1 30%;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+}
+.cart > div > p{
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.down {
+    background-color: #ffff;
+    text-align: left;
+    padding: 20px 25px 0px 25px;
+    /* height: 370px; */
+    /* margin: auto; */
+}
+.downtitle > button {
+    border: solid 1px #686C6A;
+}
+
+.downtitle li:nth-child(1) {
+    margin-right: auto;
+}
+.downtitle li:nth-child(2) {
+    margin-left: auto;
+    margin : 10px 0
+}
+
+.down > h4 {
+    font-size: 16px;
+    width: 140px;
+    border-bottom: solid 2px #E1E1E1;
+}
+.downcard {
+    /* display: none; */
+    /* gap: 20px; */
+    /* flex: content; */
+    columns: 2;
+    /* order: 10;
+    margin: 0;
+    flex: 1 1 50%;
+    width: 100%;
+    text-align: center;
+    grid-row: auto;
+    grid-template-columns: auto; */
+    margin: 12px 0px 20px 0px;
+    /* width: 100%; */
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+    flex-wrap: nowrap;
+    gap: 12px;
+    flex-direction: column;
+
+}
+.treediary {
+    border: solid 1px #E1E1E1;
+    border-radius: 15px;
+    /* text-align: center; */
+    width: 100%;
+    height: 150px;
+    /* padding: 5px 10px; */
+    margin: 0px 0px 15px 0;
+    box-shadow: 0 4px 3px 0 rgb(171 171 171 / 34%), 0 4px 4px 0 rgba(214, 214, 214, 0.192)
+}
+
+/* treediary 폰트 */
+.name{
+    height: 50px;
+    background-color: #686C6A;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    padding: 5px;
+}
+/* .line {display: flex;} */
+.hr-dashed {
+    border : 0px;
+    border-top: 0.5px dashed #ffffff;
+
+  }
+
+.level1{font-size: 14px; color: #fff;} 
+.level2{font-size: 16px; color: #fff;}
+.button2 {
+    font-size: 7px;
+    color: #fff;
+    background-color: #464646;
+    /* border-radius: 30px; */
+    width: 52px;
+}
+.etc { 
+    display: flex;
+    margin: 10px;
+    /* gap: 10%; */
+    /* border-radius: 0 0 15px 15px ; */
+}
+.text {text-align: left;}
+.imgg{
+    /* background: #FAFAFA; */
+    /* border: solid 1px #D9D9D9; */
+    text-align: right;
+    /* width: 82px; */
+}
+
+.date {
+    font-size: 80%;
+    /* margin: 3px; */
+}
+.title {
+    font-size: 70%;
+    /* margin: 3px; */
+    color: #686C6A;
+}
+.plus {
+    font-size: 85%;
+    color: #28BB74;
+    FONT-WEIGHT: 600;
+}
+.Mpercent {
+    font-size: 90%;
+    font-weight: 800;
+}
+
+
+.percent {
+     /* display: flex; */
+     gap: 10%;
+}
+
+
+.flex {
+    display: flex;
+    /* gap: 20%; */
+}
+.img {margin-right: auto;}
+
+.flex li:nth-child(1){margin-right: auto;}
+.flex li:nth-child(2){margin-left: auto;}
+
+
+
+/* 푸터 */
+footer {
+    width: 100%;
+    height: 60px;
+    background: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+.fix {
+    width: 100%;
+    height: 100%;
+    color: antiquewhite;
+}
+/*푸터 메뉴 영역*/
+.Fnav {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: #282828;
+}
+/*푸터 메뉴 목록*/
+.Fmenu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1em;
+}
+/*푸터 메뉴 아이템*/
+.Fmenu li {
+    text-align: center;
+    color: #fff;
+}
+/*홈 메뉴 분할*/
+.Fmenu li:nth-child(1) {
+    margin-right: auto;
+}
+/*오른쪽 메뉴 분할*/
+.Fmenu li:nth-child(3) {
+    margin: auto;
+}
+/*오른쪽 메뉴 분할*/
+.Fmenu li:nth-child(5) {
+    margin-left: auto;
+}
+.Fnav .Fmenu {
+    font-size: 25px;
+    font-weight: bold;
+}
